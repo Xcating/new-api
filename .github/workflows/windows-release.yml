@@ -7,9 +7,11 @@ on:
     tags:
       - '*'
       - '!*-alpha*'
+  workflow_dispatch:  # 添加这行
+
 jobs:
   release:
-    runs-on: self-hosted
+    runs-on: windows-latest
     defaults:
       run:
         shell: bash
