@@ -38,7 +38,7 @@ jobs:
           go mod download
           go build -ldflags "-s -w -X 'one-api/common.Version=$(git describe --tags)'" -o one-api.exe
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: one-api.exe
           path: one-api.exe
