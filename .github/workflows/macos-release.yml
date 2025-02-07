@@ -39,8 +39,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: one-api.exe
-          path: one-api.exe
+          name: one-api-macos
+          path: one-api-macos
           draft: true
           generate_release_notes: true
         env:
